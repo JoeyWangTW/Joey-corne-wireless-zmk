@@ -15,11 +15,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp ESCAPE>,
+                <&kp LEFT_CONTROL>,
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp ESC>,
                 <&macro_release>,
-                <&kp ESC>;
+                <&kp LEFT_CONTROL>;
 
             label = "ESC_CTRL";
         };
@@ -29,11 +29,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp ENTER>,
-                <&macro_press>,
                 <&mo 1>,
+                <&macro_press>,
+                <&kp ENTER>,
                 <&macro_release>,
-                <&kp ENTER>;
+                <&mo 1>;
 
             label = "ENTER_LAYER";
         };
