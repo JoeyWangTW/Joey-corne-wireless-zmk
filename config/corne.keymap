@@ -17,9 +17,25 @@
                 <&macro_press>,
                 <&kp ESCAPE>,
                 <&macro_press>,
-                <&kp LCTRL>;
+                <&kp LCTRL>,
+                <&macro_release>,
+                <&kp ESC>;
 
             label = "ESC_CTRL";
+        };
+
+        enter_layer: enter_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp ENTER>,
+                <&macro_press>,
+                <&mo 1>,
+                <&macro_release>,
+                <&kp ENTER>;
+
+            label = "ENTER_LAYER";
         };
     };
 
